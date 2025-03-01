@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quantum Carbon Emissions Tracker - Scope 3</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    // Function to display file's last modified time when a file is chosen
+    function displayUploadTime(event) {
+      var fileInput = event.target;
+      var uploadTimeDisplay = document.getElementById('uploadTimeDisplay');
+      if (fileInput.files && fileInput.files[0]) {
+        var file = fileInput.files[0];
+        var uploadTime = new Date(file.lastModified).toLocaleString();
+        uploadTimeDisplay.textContent = "File Upload Time: " + uploadTime;
+      } else {
+        uploadTimeDisplay.textContent = "";
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Quantum Sustainability- Carbon Emissions Tracker</h1>
+    <!-- Navigation links to switch scopes -->
+    <nav>
+      <a href="scope1.html">Scope 1</a>
+      <a href="scope2.html">Scope 2</a>
+      <a href="scope3.html">Scope 3</a>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Form for Scope 3 Emission Data -->
+    <section class="tracker-form">
+      <h2>Other Indirect Emissions</h2>
+      <form action="#" method="post">
+        
+        <label for="source">Emission Source</label>
+        <input type="text" id="source" name="source" placeholder="e.g., Transportation, Waste..." required>
+        
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="emission">Emission (kg CO<sub>2</sub>)</label>
+        <input type="number" id="emission" name="emission" placeholder="Enter amount in kg" required>
+
+        <label for="file">Upload here</label>
+        <input type="file" id="file" name="file" required onchange="displayUploadTime(event)">
+        
+        <input type="submit" value="Add Data">
+      </form>
+    </section>
+  
+  </div>
+ 
+    <div class="footer">
+    &copy; 2025 Quantum Sustainability. All rights reserved.
+    </div>
+</body>
+</html>

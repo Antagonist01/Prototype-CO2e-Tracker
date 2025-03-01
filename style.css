@@ -1,0 +1,165 @@
+/* Basic Reset & Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Header & Navigation Styling */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container Styling for Main Pages */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* Login Page Container Styling */
+.login-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 4px;
+  text-align: center;
+}
+.login-container h1 {
+  margin-bottom: 20px;
+}
+.login-container form {
+  margin-bottom: 20px;
+}
+.login-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.login-container button {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login-container button:hover {
+  background-color: #34495e;
+}
+
+/* Unit Footer Styling for Login Page */
+.unit-footer {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.unit-footer h2 {
+  margin-bottom: 10px;
+}
+.unit-footer select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Form (Tracker) Styling */
+.tracker-form {
+  margin-bottom: 30px;
+}
+.tracker-form h2 {
+  margin-bottom: 15px;
+}
+.tracker-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.tracker-form input[type="text"],
+.tracker-form input[type="number"],
+.tracker-form input[type="date"],
+.tracker-form input[type="file"],
+.tracker-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.tracker-form input[type="submit"] {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.tracker-form input[type="submit"]:hover {
+  background-color: #34495e;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Display for Upload Time */
+.upload-time {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 14px;
+  color: #666;
+}

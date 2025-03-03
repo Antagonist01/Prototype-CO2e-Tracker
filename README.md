@@ -35,7 +35,7 @@ Navigate to the project directory:
 cd Prototype-CO2e-Tracker
 Open the HTML files in your browser: For example, open login.html to start the application.
 
-Future Enhancements
+**Future Enhancements**
 Backend Integration: Connect the front-end to a Python-based RESTful API and a MySQL database for dynamic data storage and retrieval.
 
 Enhanced Authentication: Implement secure authentication with proper user session management.
